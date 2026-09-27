@@ -1,0 +1,123 @@
+{
+  "snapshot_utc": "2026-09-27T17:55:27.879031+00:00",
+  "scope": "Aggregate executed results. Raw datasets, held outcomes and private runtime state are not distributed.",
+  "arc": {
+    "entry_id": "GD1KH8d3YBmDPACVqPm1",
+    "status": "SCORING_PENDING",
+    "official_score": null,
+    "partition": null,
+    "panel": null,
+    "anchor_set": null,
+    "artifact_sha256": "cb1000d23fc650a94e493ab056340993db9bbc59ed720b405f90b58830bf2ba6",
+    "target_effect_coverage": [
+      272,
+      300
+    ],
+    "gene_effect_coverage": [
+      7679,
+      18533
+    ],
+    "fallback": "Unsupported effects retain control values. Native prep passed; this is not prediction-performance evidence."
+  },
+  "nih": {
+    "final_queries": 138,
+    "static_correct": 24,
+    "timestamp_correct": 42,
+    "rules_correct": 138,
+    "verified_correct": 138,
+    "certificate_audit": {
+      "queries": 138,
+      "answer_correct": 138,
+      "proof_valid": 138,
+      "provenance_complete": 138,
+      "replay_reproducible": 138,
+      "abstentions": 69,
+      "correct_abstentions": 69,
+      "typed_abstentions": 69,
+      "measured_constraint_violations": {
+        "observed_availability": 0,
+        "interval": 0,
+        "curation_event": 0
+      },
+      "tamper_tasks": 552,
+      "tamper_rejections": 552,
+      "real_contradiction_witnesses": 0,
+      "real_contradiction_detection_accuracy": null,
+      "contradiction_metric_status": "NOT_ESTIMABLE_NO_INDEPENDENT_REAL_CONTRADICTION_LABELS",
+      "future_publication_leakage": null,
+      "future_publication_leakage_status": "NOT_IDENTIFIABLE_FIRST_PUBLIC_TIME_UNKNOWN",
+      "ontology_entailment_trace_status": "NOT_PRESENT_IN_THIS_TEMPORAL_CERTIFICATE",
+      "incremental_answer_accuracy_claim": false,
+      "source_gold_is_clinical_expert_gold": false,
+      "matches_archived_correctness_total": true
+    },
+    "limits": "Consumed, correlated editorial-history queries with source-adjudicated labels; not clinical gold or improved accuracy over sound temporal rules."
+  },
+  "decision": {
+    "jurkat_primary_incremental_verified_yield": false,
+    "documentary_m2_incremental_verified_yield": false,
+    "real_next_measurement_benchmark": "NOT_COMPLETE",
+    "learned_disjoint_procedure_transfer": "NOT_DEMONSTRATED"
+  },
+  "conformacell": {
+    "v14_leads_reviewed": 4,
+    "independent_real_endpoints_admitted": 0,
+    "synthetic_identifiability": "ENGINEERING_AND_SYNTHETIC_ONLY",
+    "next_gate": "Exact activity construct/background and condition lineage for independently withheld molecular endpoint."
+  },
+  "pathology": {
+    "patients": 5,
+    "fields": 5,
+    "metrics": {
+      "count_absolute_error": {
+        "equal_patient_macro": 44.2,
+        "eligible_patients": 5,
+        "fixed_patient_denominator": 5,
+        "available_patient_mean_descriptive": 44.2
+      },
+      "localization_f1": {
+        "equal_patient_macro": 0.35054371195420236,
+        "eligible_patients": 5,
+        "fixed_patient_denominator": 5,
+        "available_patient_mean_descriptive": 0.35054371195420236
+      },
+      "pixel_dice": {
+        "equal_patient_macro": 0.45365904600312296,
+        "eligible_patients": 5,
+        "fixed_patient_denominator": 5,
+        "available_patient_mean_descriptive": 0.45365904600312296
+      },
+      "eligible_area_absolute_error_um2": {
+        "equal_patient_macro": 184.68800000000005,
+        "eligible_patients": 5,
+        "fixed_patient_denominator": 5,
+        "available_patient_mean_descriptive": 184.68800000000005
+      },
+      "matched_shape_mae_area_um2": {
+        "equal_patient_macro": null,
+        "eligible_patients": 4,
+        "fixed_patient_denominator": 5,
+        "available_patient_mean_descriptive": 14.50555555555556
+      },
+      "matched_shape_mae_major_axis_um": {
+        "equal_patient_macro": null,
+        "eligible_patients": 4,
+        "fixed_patient_denominator": 5,
+        "available_patient_mean_descriptive": 0.9838599550186573
+      },
+      "matched_shape_mae_minor_axis_um": {
+        "equal_patient_macro": null,
+        "eligible_patients": 4,
+        "fixed_patient_denominator": 5,
+        "available_patient_mean_descriptive": 0.6920334558540387
+      },
+      "matched_shape_mae_eccentricity": {
+        "equal_patient_macro": null,
+        "eligible_patients": 4,
+        "fixed_patient_denominator": 5,
+        "available_patient_mean_descriptive": 0.058969298851915736
+      }
+    },
+    "limits": "Small eligibility-selected patient-disjoint retrospective measurement panel; no clinical validation, population inference or model-improvement claim."
+  }
+}

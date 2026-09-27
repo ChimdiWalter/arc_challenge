@@ -1,0 +1,15 @@
+{
+  "version": "InvariantCell-finite-horn-1",
+  "logic": "finite-positive-horn-triples-v1",
+  "namespace": "urn:invariantcell:",
+  "disjoint_types": [["ic:Prediction", "ic:ObservedAssertion"]],
+  "irreflexive": ["ic:precedes"],
+  "rules": [
+    {"id": "prediction_is_record", "body": [["?x", "rdf:type", "ic:Prediction"]], "head": ["?x", "rdf:type", "ic:CountRecord"]},
+    {"id": "observed_is_record", "body": [["?x", "rdf:type", "ic:ObservedAssertion"]], "head": ["?x", "rdf:type", "ic:CountRecord"]},
+    {"id": "pathway_candidate_chain", "body": [["?x", "ic:targets", "?g"], ["?g", "ic:participates_in", "?p"]], "head": ["?x", "ic:candidate_pathway", "?p"]},
+    {"id": "temporal_order_transitivity", "body": [["?a", "ic:precedes", "?b"], ["?b", "ic:precedes", "?c"]], "head": ["?a", "ic:precedes", "?c"]},
+    {"id": "provenance_inverse", "body": [["?a", "ic:generated_by", "?b"]], "head": ["?b", "ic:generated", "?a"]}
+  ],
+  "limitations": ["Original finite positive Horn profile; not an OWL implementation.", "Pathway candidate is not an experimentally observed pathway effect.", "Temporal admissibility precedes inference; missing times are never supplied by ontology rules.", "No GO/Biolink equivalence is asserted without a separately reviewed mapping."]
+}

@@ -1,0 +1,12 @@
+{
+  "repository": "arc_challenge",
+  "scope": "Portable engineering tests and explicitly synthetic metadata demo; no biological research rerun",
+  "tests_run": 27,
+  "tests_exit_code": 0,
+  "demo_exit_code": 0,
+  "wall_seconds": 2.6825156873092055,
+  "python": "3.12.3",
+  "test_command": "PYTHONPATH=src python -B -m unittest discover -s tests -v",
+  "model_training": false,
+  "external_requests": false
+}
